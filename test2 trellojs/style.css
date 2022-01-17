@@ -1,3 +1,54 @@
 p{
     display: inline-block;
 }
+.zonast{
+    display: inline-block;
+    width: 300px;
+    background-color: rgb(179, 179, 179);
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+#añadirzona{
+    width: 100px;
+    height: 50px;
+}
+ul{
+    padding-inline-start: 0px;
+}
+li{
+    list-style: none;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: greenyellow;
+}
+.zonast{
+    margin: 15px;
+    padding: 20px;
+    border-radius: 20px;
+}
+input{
+    height: 30px;
+}
+button{
+    height: 37px;
+    width: 122px;
+}
+.btn-delete{
+    margin-top: 10px;
+    margin-right: 20px;
+    box-shadow: rgba(40, 46, 42, 0.678) 2px 2px 5px 0px;
+    float: right;
+    height: 28px;
+    width: 28px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50px;
+    font-weight: bold;
+    color: white;
+}
+.btn-delete:hover{
+    background-color: rgb(211, 0, 0);
+    box-shadow: rgb(255, 0, 0) 0px 0px 5px 3px;
+    cursor: pointer;
+}
