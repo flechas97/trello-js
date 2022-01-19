@@ -5,26 +5,35 @@
 body{
     background-image: url("fondo.jpg");
     background-position:top;
- 
+    background-attachment: fixed;
+    min-width: 1080px;
+    max-width: fit-content;
+    /* width: 3800px; */
 }
 p{
     display: inline-block;
     padding: 5px;
 }
-.zonast{
-    display: inline-block;
-    width: 300px;
-    background-color: rgb(179, 179, 179);
-}
+
 .flex{
+    /* display: inline; */
+    padding-top: 100px;
     display: flex;
-    justify-content: center;
-    align-items:flex-start;
-    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* align-items:flex-start; */
 }
 #añadirzona{
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 115px;
+    line-height: -40px;
+    padding: 20px 20px 20px 20px; 
+    margin-right: 50px;
+    font-size: 20px ;
+    margin-top: 115px;
+}
+.container{
+    display: flex;
+    align-items: flex-start;
 }
 ul{
     padding-inline-start: 0px;
@@ -42,6 +51,9 @@ li{
     border-radius: 20px;
     border-bottom: 4px solid black;
     border-right: 4px solid black;
+    display: inline-block;
+    width: 300px;
+    background-color: rgb(179, 179, 179);
 }
 input{
     height: 30px;

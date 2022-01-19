@@ -146,8 +146,13 @@ var bota= document.getElementById("añadirzona").setAttribute("disabled","");
 
 window.onload=function(){
     var pos=window.name || 0;
-    window.scrollTo(0,pos);
+    window.scrollTo(pos,0);
     }
     window.onunload=function(){
-    window.name=self.pageYOffset || (document.documentElement.scrollTop+document.body.scrollTop);
+    window.name=self.scrollX || (document.documentElement.scrollLeft+document.body.scrollLeft);
     }
+
+const scrollContainer = document.querySelector("html");
+scrollContainer.addEventListener("wheel", (evt) => {
+    scrollContainer.scrollLeft += evt.deltaY;
+});
