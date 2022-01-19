@@ -2,11 +2,7 @@
     margin: 0px;
     padding: 0px;
 }
-body{
-    background-image: url("fondo.jpg");
-    background-position:top;
- 
-}
+
 p{
     display: inline-block;
     padding: 5px;
@@ -18,8 +14,6 @@ p{
 }
 .flex{
     display: flex;
-    justify-content: center;
-    align-items:flex-start;
     flex-wrap: wrap;
 }
 #añadirzona{
@@ -40,8 +34,6 @@ li{
     margin: 15px;
     padding: 20px;
     border-radius: 20px;
-    border-bottom: 4px solid black;
-    border-right: 4px solid black;
 }
 input{
     height: 30px;
@@ -66,17 +58,4 @@ button{
     background-color: rgb(211, 0, 0);
     box-shadow: rgb(255, 0, 0) 0px 0px 5px 3px;
     cursor: pointer;
-}
-.titulos{
-    background-color: rgba(0, 0, 0, 0);
-    border-color: rgb(60, 255, 0);
-    font-size: 30px;
-    font-weight: bold;
-    width:100%;
-    text-align: center;
-    
-}
-
-input:focus{
-    outline:none;
 }
