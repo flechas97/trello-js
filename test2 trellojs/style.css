@@ -20,7 +20,7 @@ p{
     padding-top: 100px;
     display: flex;
     /* justify-content: center; */
-    /* align-items:flex-start; */
+    align-items:flex-start;
 }
 #añadirzona{
     width: 150px;
@@ -53,8 +53,10 @@ li{
     border-right: 4px solid black;
     display: inline-block;
     width: 300px;
+    min-height: 150px;
     background-color: rgb(179, 179, 179);
 }
+
 input{
     height: 30px;
 }
