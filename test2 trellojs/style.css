@@ -20,7 +20,7 @@ p{
 
 .flex{
     /* display: inline; */
-    padding-top: 100px;
+    padding-top: 60px;
     display: flex;
     /* justify-content: center; */
     align-items:flex-start;
@@ -152,6 +152,28 @@ input:focus{
     outline:none;
     color: rgb(59, 59, 59);
 }
-p{
- 
-}
+
+
+
+@media (min-width: 1500px) {
+    .zonast{
+        margin: 15px;
+        padding: 5px;
+        border-radius: 8px;
+        border-bottom: 4px solid black;
+        border-right: 4px solid black;
+        display: inline-block;
+        width: 220px;
+        min-height: 150px;
+        background-color: rgb(228, 228, 228);
+        background: rgba(255, 255, 255, 0.336);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3px );
+        -webkit-backdrop-filter: blur( 3px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        max-height: 78vh;
+        overflow-y: scroll;
+        
+    }
+  }

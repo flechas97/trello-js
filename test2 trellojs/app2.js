@@ -1,4 +1,6 @@
 //import * as funciones from 'funciones.mjs';
+if(localStorage.getItem("usuarioactual") == localStorage.getItem("usuario")&&localStorage.getItem("passactual") == localStorage.getItem("pass")){
+
 
 const addboton = document.querySelector("#añadirbtn0");
 const btnañadirzona = document.querySelector("#añadirzona")
@@ -158,7 +160,7 @@ const scrollContainer = document.querySelector("html");
 scrollContainer.addEventListener("wheel", (evt) => {
     scrollContainer.scrollLeft += evt.deltaY;
 });
-
+}
 // if(a == false){
 //     scrollContainer.addEventListener("wheel", (evt) => {
 //         scrollContainer.scrollLeft += evt.deltaY;
