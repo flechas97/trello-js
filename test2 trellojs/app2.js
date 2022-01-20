@@ -154,15 +154,22 @@ window.onload=function(){
     window.name=self.scrollX || (document.documentElement.scrollLeft+document.body.scrollLeft);
     }
 
-
+}
 const scrollContainer = document.querySelector("html");
 
-scrollContainer.addEventListener("wheel", (evt) => {
-    scrollContainer.scrollLeft += evt.deltaY;
-});
+var scrolly= "true";
+var divs = document.getElementsByClassName("lista1");
+for (let p = 0; p < divs.length; p++) {
+    divs[p].addEventListener("mouseover",(e) =>{
+        scrolly = "false";
+    })
+    divs[p].addEventListener("mouseout",(e) =>{
+        scrolly = "true";
+    })
 }
-// if(a == false){
-//     scrollContainer.addEventListener("wheel", (evt) => {
-//         scrollContainer.scrollLeft += evt.deltaY;
-//     });
-// }
+    scrollContainer.addEventListener("wheel", (evt) => {
+        if(scrolly == "true"){
+            scrollContainer.scrollLeft += evt.deltaY;
+        }
+    });
+

@@ -243,6 +243,7 @@ function cargarlista(array,ul,id,local) {
         p.textContent = text;
         li.appendChild(p);
         li.appendChild(adddeletebtn(ul,local,array));
+        li.appendChild(addeditbtn(ul,local,array));
         ul.appendChild(li);  
     }
 }
@@ -251,6 +252,26 @@ function adddeletebtn(ul,local,array) {
     const deletebtn = document.createElement("button");
     deletebtn.textContent = "X";
     deletebtn.className = "btn-delete";
+
+    deletebtn.addEventListener("click", (e) =>{
+        // array = localStorage.getItem("textos");
+        // array = array.split(",");
+        console.log(array);
+        const item = e.target.parentElement;
+        elemento = item.getAttribute("id");
+        elemento = elemento.substr(3);
+        array.splice(elemento,1);
+        localStorage.setItem(local,array);
+        console.log(array);
+        ul.removeChild(item);
+        location.reload();
+    })
+    return deletebtn;
+}
+function addeditbtn(ul,local,array) {
+    const deletebtn = document.createElement("button");
+    deletebtn.textContent = "X";
+    deletebtn.className = "btn-edit";
 
     deletebtn.addEventListener("click", (e) =>{
         // array = localStorage.getItem("textos");

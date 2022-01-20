@@ -13,7 +13,7 @@ body{
 p{
     display: inline-block;
     padding: 5px;
-    width: 75%;
+    width: 62%;
     word-wrap: break-word;
    
 }
@@ -114,6 +114,7 @@ button{
     float: right;
 }
 .btn-delete{
+    position:relative;
     margin-top: 0px;
     margin-right: 10px;
     box-shadow: rgba(40, 46, 42, 0.349) 1px 1px 2px 0px;
@@ -125,6 +126,27 @@ button{
     font-weight: bold;
     color: white;
     font-size: 12px;
+}
+.btn-edit{
+    position:relative;
+    /* top: 50px; */
+
+    margin-top: 0px;
+    margin-right: 3px;
+    box-shadow: rgba(40, 46, 42, 0.349) 1px 1px 2px 0px;
+    float: right;
+    height: 23px;
+    width: 23px;
+    background-color: rgba(255, 190, 68, 0.705);
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+}
+.btn-edit:hover{
+    background-color: rgb(255, 166, 0);
+    box-shadow: rgb(255, 196, 0) 0px 0px 5px 3px;
+    cursor: pointer;
 }
 .btn-delete:hover{
     background-color: rgb(211, 0, 0);
