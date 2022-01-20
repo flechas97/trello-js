@@ -152,7 +152,15 @@ window.onload=function(){
     window.name=self.scrollX || (document.documentElement.scrollLeft+document.body.scrollLeft);
     }
 
+
 const scrollContainer = document.querySelector("html");
+
 scrollContainer.addEventListener("wheel", (evt) => {
     scrollContainer.scrollLeft += evt.deltaY;
 });
+
+// if(a == false){
+//     scrollContainer.addEventListener("wheel", (evt) => {
+//         scrollContainer.scrollLeft += evt.deltaY;
+//     });
+// }

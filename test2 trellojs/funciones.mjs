@@ -9,10 +9,11 @@ function cargarzonas(id){
     imput.setAttribute("id","añadirimp"+id);
     var boton = document.createElement("button");
     boton.setAttribute("id","añadirbtn"+id);
-    var texto = document.createTextNode("añadir");
+    var texto = document.createTextNode("+");
     var titulo = document.createElement("input");
     titulo.setAttribute("id","tituloimp"+id);
     titulo.setAttribute("class","titulos");
+    titulo.setAttribute("placeholder","Nuevo titulo");
     titulo.value = "Titulo";
     cajon.appendChild(titulo);
     boton.appendChild(texto);
@@ -207,7 +208,7 @@ function añadirzona(id){
 }
     zonas++
     localStorage.setItem("zonas",zonas);
-    window.location.href = "index.html";
+    location.reload();
 }
 
 
@@ -229,7 +230,7 @@ function añadirtarea(ul,imput,local,array){
     // localStorage.setItem("objetos",objetos);
     array.push(text);
     localStorage.setItem(local,array);
-    window.location.href = "index.html";
+    location.reload();
 }
 function cargarlista(array,ul,id,local) {
     for (let i = 0; i < array.length; i++) {
@@ -262,7 +263,7 @@ function adddeletebtn(ul,local,array) {
         localStorage.setItem(local,array);
         console.log(array);
         ul.removeChild(item);
-        window.location.href = "index.html";
+        location.reload();
     })
     return deletebtn;
 }

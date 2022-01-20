@@ -13,6 +13,9 @@ body{
 p{
     display: inline-block;
     padding: 5px;
+    width: 75%;
+    word-wrap: break-word;
+   
 }
 
 .flex{
@@ -39,42 +42,89 @@ ul{
     padding-inline-start: 0px;
 }
 li{
+    
     list-style: none;
     margin: 5px;
-    border-radius: 15px;
-    background-color: greenyellow;
-    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 }
 .zonast{
     margin: 15px;
-    padding: 20px;
-    border-radius: 20px;
+    padding: 5px;
+    border-radius: 8px;
     border-bottom: 4px solid black;
     border-right: 4px solid black;
     display: inline-block;
-    width: 300px;
+    width: 220px;
     min-height: 150px;
-    background-color: rgb(179, 179, 179);
+    background-color: rgb(228, 228, 228);
+    background: rgba(255, 255, 255, 0.336);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    max-height: 800px;
+    overflow-y: scroll;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f100;
+    border-radius: 50px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.274);
+    border-radius: 50px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.719);
+  }
+input{
+    margin-left: 5px;
+    height: 21px;
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.418);
+    border: 1px solid rgba(128, 128, 128, 0.411);
+    word-wrap: break-word;
+    text-rendering:unset;
+
 }
 
-input{
-    height: 30px;
+input:focus{
+    background-color: rgba(255, 255, 255, 0.842);
 }
 button{
-    height: 37px;
-    width: 122px;
+    margin-right: 5px;
+    height: 25px;
+    width: 15%;
+    font-size: 20px;
+    background-color: rgba(172, 255, 172, 0.795);
+    border: 1px solid #ccc;
+    float: right;
 }
 .btn-delete{
     margin-top: 0px;
     margin-right: 10px;
-    box-shadow: rgba(40, 46, 42, 0.678) 2px 2px 5px 0px;
+    box-shadow: rgba(40, 46, 42, 0.349) 1px 1px 2px 0px;
     float: right;
-    height: 28px;
-    width: 28px;
-    background-color: rgb(255, 0, 0);
-    border-radius: 50px;
+    height: 23px;
+    width: 23px;
+    background-color: rgba(250, 120, 120, 0.705);
+    border-radius: 5px;
     font-weight: bold;
     color: white;
+    font-size: 12px;
 }
 .btn-delete:hover{
     background-color: rgb(211, 0, 0);
@@ -83,14 +133,25 @@ button{
 }
 .titulos{
     background-color: rgba(0, 0, 0, 0);
-    border-color: rgb(60, 255, 0);
-    font-size: 30px;
+    /* border-color: rgb(60, 255, 0); */
+    border: 0px solid black;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;
+    font-size: 19px;
+    padding: 3px;
     font-weight: bold;
-    width:100%;
+    width:90%;
     text-align: center;
     
 }
-
+::placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+  }
 input:focus{
     outline:none;
+    color: rgb(59, 59, 59);
+}
+p{
+ 
 }
