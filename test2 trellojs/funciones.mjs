@@ -31,10 +31,10 @@ function cargarzonas(id){
     var ul2 = document.querySelector("#lista1");
     var imput2 = document.querySelector("#añadirimp1");
     if(id==1){
-        cargarlista(array2,ul2,1,"textos2");
+        cargarlista(array2,ul2,1,"textos2","textos2time",array2time);
         titulo.value = localStorage.getItem("titulo"+id);
         boton.addEventListener("click",function (e) {
-            añadirtarea(ul2,imput2,"textos2",array2); 
+            añadirtarea(ul2,imput2,"textos2",array2,"textos2time",array2time); 
         })
         titulo.addEventListener("focusout",function (e) {
             titulo.style.borderColor = "rgb(60, 255, 0)";
@@ -47,10 +47,10 @@ function cargarzonas(id){
     }else if(id==2){
         var ul3 = document.querySelector("#lista2");
         var imput3 = document.querySelector("#añadirimp2");
-        cargarlista(array3,ul3,2,"textos3");
+        cargarlista(array3,ul3,2,"textos3","textos3time",array3time);
         titulo.value = localStorage.getItem("titulo"+id);
         boton.addEventListener("click",function (e) {
-            añadirtarea(ul3,imput3,"textos3",array3); 
+            añadirtarea(ul3,imput3,"textos3",array3,"textos3time",array3time); 
         })
                 titulo.addEventListener("focusout",function (e) {
                     titulo.style.borderColor = "rgb(60, 255, 0)";
@@ -63,10 +63,10 @@ function cargarzonas(id){
     }else if(id==3){
         var ul4 = document.querySelector("#lista3");
         var imput4 = document.querySelector("#añadirimp3");
-        cargarlista(array4,ul4,3,"textos4");
+        cargarlista(array4,ul4,3,"textos4","textos4time",array4time);
         titulo.value = localStorage.getItem("titulo"+id);
         boton.addEventListener("click",function (e) {
-            añadirtarea(ul4,imput4,"textos4",array4); 
+            añadirtarea(ul4,imput4,"textos4",array4,"textos4time",array4time); 
         })
                 titulo.addEventListener("focusout",function (e) {
                     titulo.style.borderColor = "rgb(60, 255, 0)";
@@ -79,10 +79,10 @@ function cargarzonas(id){
     }else if(id==4){
         var ul5 = document.querySelector("#lista4");
         var imput5 = document.querySelector("#añadirimp4");
-        cargarlista(array5,ul5,4,"textos5");
+        cargarlista(array5,ul5,4,"textos5","textos5time",array5time);
         titulo.value = localStorage.getItem("titulo"+id);
         boton.addEventListener("click",function (e) {
-            añadirtarea(ul5,imput5,"textos5",array5); 
+            añadirtarea(ul5,imput5,"textos5",array5,"textos5time",array5time); 
         })
                 titulo.addEventListener("focusout",function (e) {
                     titulo.style.borderColor = "rgb(60, 255, 0)";
@@ -95,10 +95,10 @@ function cargarzonas(id){
     }else if(id==5){
         var ul6 = document.querySelector("#lista5");
         var imput6 = document.querySelector("#añadirimp5");
-        cargarlista(array6,ul6,5,"textos6");
+        cargarlista(array6,ul6,5,"textos6","textos6time",array6time);
         titulo.value = localStorage.getItem("titulo"+id);
         boton.addEventListener("click",function (e) {
-            añadirtarea(ul6,imput6,"textos6",array6); 
+            añadirtarea(ul6,imput6,"textos6",array6,"textos6time",array6time); 
         })
                 titulo.addEventListener("focusout",function (e) {
                     titulo.style.borderColor = "rgb(60, 255, 0)";
@@ -111,10 +111,10 @@ function cargarzonas(id){
     }else if(id==6){
         var ul7 = document.querySelector("#lista6");
         var imput7 = document.querySelector("#añadirimp6");
-        cargarlista(array7,ul7,6,"textos7");
+        cargarlista(array7,ul7,6,"textos7","textos7time",array7time);
         titulo.value = localStorage.getItem("titulo"+id);
         boton.addEventListener("click",function (e) {
-            añadirtarea(ul7,imput7,"textos7",array7); 
+            añadirtarea(ul7,imput7,"textos7",array7,"textos7time",array7time); 
         })
                 titulo.addEventListener("focusout",function (e) {
                     titulo.style.borderColor = "rgb(60, 255, 0)";
@@ -128,10 +128,10 @@ function cargarzonas(id){
     }else if(id==7){
         var ul8 = document.querySelector("#lista7");
         var imput8 = document.querySelector("#añadirimp7");
-        cargarlista(array8,ul8,7,"textos8");
+        cargarlista(array8,ul8,7,"textos8","textos8time",array8time);
         titulo.value = localStorage.getItem("titulo"+id);
         boton.addEventListener("click",function (e) {
-            añadirtarea(ul8,imput8,"textos8",array8); 
+            añadirtarea(ul8,imput8,"textos8",array8,"textos8time",array8time); 
         })
                 titulo.addEventListener("focusout",function (e) {
                     titulo.style.borderColor = "rgb(60, 255, 0)";
@@ -145,10 +145,10 @@ function cargarzonas(id){
     }else if(id==8){
         var ul9 = document.querySelector("#lista8");
         var imput9 = document.querySelector("#añadirimp8");
-        cargarlista(array9,ul9,8,"textos9");
+        cargarlista(array9,ul9,8,"textos9","textos9time",array9time);
         titulo.value = localStorage.getItem("titulo"+id);
         boton.addEventListener("click",function (e) {
-            añadirtarea(ul9,imput9,"textos9",array9); 
+            añadirtarea(ul9,imput9,"textos9",array9,"textos9time",array9time); 
         })
                 titulo.addEventListener("focusout",function (e) {
                     titulo.style.borderColor = "rgb(60, 255, 0)";
@@ -162,10 +162,10 @@ function cargarzonas(id){
     }else if(id==9){
         var ul10 = document.querySelector("#lista9");
         var imput10 = document.querySelector("#añadirimp9");
-        cargarlista(array10,ul10,9,"textos10");
+        cargarlista(array10,ul10,9,"textos10","textos10time",array10time);
         titulo.value = localStorage.getItem("titulo"+id);
         boton.addEventListener("click",function (e) {
-            añadirtarea(ul10,imput10,"textos10",array10); 
+            añadirtarea(ul10,imput10,"textos10",array10,"textos10time",array10time); 
         })
                 titulo.addEventListener("focusout",function (e) {
                     titulo.style.borderColor = "rgb(60, 255, 0)";
@@ -217,7 +217,15 @@ function añadirzona(id){
 
 
 
-function añadirtarea(ul,imput,local,array){
+function añadirtarea(ul,imput,local,array,localtime,arraytimevar){
+    const tiempito = new Date();
+    var day = tiempito.getDate(),
+        month = tiempito.getMonth()+1,
+        year = tiempito.getFullYear(),
+        horas = tiempito.getHours(),
+        minutos = tiempito.getMinutes();
+    var dia = day+"/"+month+"/"+year+"-"+horas+":"+minutos;
+    console.log(dia);
     // var objetos = localStorage.getItem("objetos")
     const text = imput.value;
     const li = document.createElement("li");
@@ -231,21 +239,32 @@ function añadirtarea(ul,imput,local,array){
     // objetos++;
     // localStorage.setItem("objetos",objetos);
     array.push(text);
+    arraytimevar.push(dia);
     localStorage.setItem(local,array);
+    localStorage.setItem(localtime,arraytimevar);
     location.reload();
 }
-function cargarlista(array,ul,id,local) {
+function cargarlista(array,ul,id,local,localtime,arraytimevar) {
+    const time = new Date();
+    let day = time.getDate(),
+        month = time.getMonth()+1,
+        year = time.getFullYear();
     for (let i = 0; i < array.length; i++) {
         //var objetos = localStorage.getItem("objetos")
         const text = array[i];
         const li = document.createElement("li");
+        const span = document.createElement("span");
+        const textspan = document.createTextNode(arraytimevar[i])
         const p = document.createElement("p");
         li.setAttribute("id","li"+id+i);
         li.setAttribute("class","lista1");
         p.textContent = text;
         li.appendChild(p);
-        li.appendChild(adddeletebtn(ul,local,array));
+       
+        li.appendChild(adddeletebtn(ul,local,array,localtime,arraytimevar));
         //li.appendChild(cambiarfondo(ul,local,array));
+        span.appendChild(textspan)
+        li.appendChild(span);
         ul.appendChild(li);
         li.addEventListener("dblclick",(e)=>{
             const divfondo = document.createElement("div");
@@ -289,7 +308,7 @@ function cargarlista(array,ul,id,local) {
     }
 }
 
-function adddeletebtn(ul,local,array) {
+function adddeletebtn(ul,local,array,localtime,arraytimevar) {
     const deletebtn = document.createElement("button");
     deletebtn.textContent = "X";
     deletebtn.className = "btn-delete";
@@ -302,7 +321,9 @@ function adddeletebtn(ul,local,array) {
         elemento = item.getAttribute("id");
         elemento = elemento.substr(3);
         array.splice(elemento,1);
+        arraytimevar.splice(elemento,1);
         localStorage.setItem(local,array);
+        localStorage.setItem(localtime,arraytimevar);
         console.log(array);
         ul.removeChild(item);
         location.reload();
@@ -420,3 +441,15 @@ function cambiarfondo() {
     
 // }
 // borrarlista1();
+
+
+// const time = document.getElementById("time");
+// const date = document.getElementById("date");
+// const interval = setInterval(()=>{
+//     const local = new Date();
+//     let day = local.getDate(),
+//         month = local.getMonth(),
+//         year = local.getFullYear();
+//     time.innerHTML = local.toLocaleTimeString();
+//     date.innerHTML = `${day}/${month+1}/${year}`
+// }, 1000);

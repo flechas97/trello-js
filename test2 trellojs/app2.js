@@ -21,6 +21,17 @@ var array7 = localStorage.getItem("textos7");
 var array8 = localStorage.getItem("textos8");
 var array9 = localStorage.getItem("textos9");
 var array10 = localStorage.getItem("textos10");
+var arraytime = localStorage.getItem("textostime");
+var array2time = localStorage.getItem("textos2time");
+var array3time = localStorage.getItem("textos3time");
+var array4time = localStorage.getItem("textos4time");
+var array5time = localStorage.getItem("textos5time");
+var array6time = localStorage.getItem("textos6time");
+var array7time = localStorage.getItem("textos7time");
+var array8time = localStorage.getItem("textos8time");
+var array9time = localStorage.getItem("textos9time");
+var array10time = localStorage.getItem("textos10time");
+
 var zonas = localStorage.getItem("zonas");
 const body2 = document.getElementsByTagName("body");
 body2[0].style.backgroundImage = localStorage.getItem("fondo");
@@ -29,11 +40,23 @@ body2[0].style.backgroundImage = localStorage.getItem("fondo");
 //1
 if(array != null){
     array = array.split(",");
+    
     if(array[0]==""){
         array = [];
+       
     }
 }else{
     array = [];  
+}
+if(arraytime != null){
+    console.log(arraytime)  
+    arraytime = arraytime.split(",");
+    if(arraytime[0]==""){
+        arraytime=[];
+    }
+}else{
+    arraytime = [];  
+    console.log(arraytime)
 }
 //2
 if(array2 != null){
@@ -44,6 +67,15 @@ if(array2 != null){
 }else{
     array2 = [];  
 }
+if(array2time != null){
+    array2time = array2time.split(",");
+    if(array2time[0]==""){
+        array2time = [];
+    }
+}else{
+    array2time = [];  
+}
+
 //3
 if(array3 != null){
     array3 = array3.split(",");
@@ -52,6 +84,14 @@ if(array3 != null){
     }
 }else{
     array3 = [];  
+}
+if(array3time != null){
+    array3time = array3time.split(",");
+    if(array3time[0]==""){
+        array3time = [];
+    }
+}else{
+    array3time = [];  
 }
 //4
 if(array4 != null){
@@ -62,6 +102,14 @@ if(array4 != null){
 }else{
     array4 = [];  
 }
+if(array4time != null){
+    array4time = array4time.split(",");
+    if(array4time[0]==""){
+        array4time = [];
+    }
+}else{
+    array4time = [];  
+}
 //5
 if(array5 != null){
     array5 = array5.split(",");
@@ -70,6 +118,14 @@ if(array5 != null){
     }
 }else{
     array5 = [];  
+}
+if(array5time != null){
+    array5time = array5time.split(",");
+    if(array5time[0]==""){
+        array5time = [];
+    }
+}else{
+    array5time = [];  
 }
 //6
 if(array6 != null){
@@ -80,6 +136,14 @@ if(array6 != null){
 }else{
     array6 = [];  
 }
+if(array6time != null){
+    array6time = array6time.split(",");
+    if(array6time[0]==""){
+        array6time = [];
+    }
+}else{
+    array6time = [];  
+}
 //7
 if(array7 != null){
     array7 = array7.split(",");
@@ -88,6 +152,14 @@ if(array7 != null){
     }
 }else{
     array7 = [];  
+}
+if(array7time != null){
+    array7time = array7time.split(",");
+    if(array7time[0]==""){
+        array7time = [];
+    }
+}else{
+    array7time = [];  
 }
 //8
 if(array8 != null){
@@ -98,6 +170,14 @@ if(array8 != null){
 }else{
     array8 = [];  
 }
+if(array8time != null){
+    array8time = array8time.split(",");
+    if(array8time[0]==""){
+        array8time = [];
+    }
+}else{
+    array8time = [];  
+}
 //9
 if(array9 != null){
     array9 = array9.split(",");
@@ -106,6 +186,14 @@ if(array9 != null){
     }
 }else{
     array9 = [];  
+}
+if(array9time != null){
+    array9time = array9time.split(",");
+    if(array9time[0]==""){
+        array9time = [];
+    }
+}else{
+    array9time = [];  
 }
 //10
 if(array10 != null){
@@ -116,6 +204,14 @@ if(array10 != null){
 }else{
     array10 = [];  
 }
+if(array10time != null){
+    array10time = array10time.split(",");
+    if(array10time[0]==""){
+        array10time = [];
+    }
+}else{
+    array10time = [];  
+}
 //----------
 if(zonas != null){
     if(zonas[0]==""){
@@ -125,18 +221,18 @@ if(zonas != null){
     console.log(2)
     zonas = 1;  
 }
-cargarlista(array,ul,0,"textos");
+cargarlista(array,ul,0,"textos","textostime",arraytime);
 
 
 console.log(array);
-console.log(zonas);
+console.log(arraytime);
 
 btnfondo.addEventListener("click",(e) =>{
     console.log("asd");
     cambiarfondo(e);
 })
 addboton.addEventListener("click",(e) =>{
-    añadirtarea(ul,imput,"textos",array);
+    añadirtarea(ul,imput,"textos",array,"textostime",arraytime);
 })
 titulo.addEventListener("focusout",(e) =>{
     titulo.style.borderColor = "rgb(60, 255, 0)";
