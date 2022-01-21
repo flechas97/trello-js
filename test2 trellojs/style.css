@@ -321,4 +321,12 @@ h5{
         overflow-y: scroll;
         
     }
+    body{
+        background-image: url('fondo.jpg');
+        background-position:top;
+        background-attachment: fixed;
+        min-width: 1080px;
+        max-width: fit-content;
+        /* width: 3800px; */
+    }
   }
