@@ -7,6 +7,8 @@ function cargarzonas(id){
     cajon.setAttribute("class","cajon"+id);
     var imput = document.createElement("input");
     imput.setAttribute("id","añadirimp"+id);
+    imput.setAttribute("class","impplace");
+    imput.setAttribute("placeholder","Añadir tarjeta");
     var boton = document.createElement("button");
     boton.setAttribute("id","añadirbtn"+id);
     var texto = document.createTextNode("+");
@@ -243,7 +245,7 @@ function cargarlista(array,ul,id,local) {
         p.textContent = text;
         li.appendChild(p);
         li.appendChild(adddeletebtn(ul,local,array));
-        //li.appendChild(addeditbtn(ul,local,array));
+        //li.appendChild(cambiarfondo(ul,local,array));
         ul.appendChild(li);
         li.addEventListener("dblclick",(e)=>{
             const divfondo = document.createElement("div");
@@ -342,6 +344,72 @@ function addeditbtn(ul,local,array) {
     return deletebtn;
 }
 
+
+function cambiarfondo() {
+        const body2 = document.getElementsByClassName("container");
+        const body = document.getElementsByTagName("body");
+        const divfondo = document.createElement("div");
+        const div = document.createElement("div");
+        const h5 =document.createElement("h5");
+        const texto3 = document.createTextNode("Cambiar fondo");
+        const img1 = document.createElement("img");
+        img1.setAttribute("class","fondo1");
+        const img2 = document.createElement("img");
+        img2.setAttribute("class","fondo2");
+        const img3 = document.createElement("img");
+        img3.setAttribute("class","fondo3");
+        const img4 = document.createElement("img");
+        img4.setAttribute("class","fondo4");
+        const img5 = document.createElement("img");
+        img5.setAttribute("class","fondo5");
+        const img6 = document.createElement("img");
+        img6.setAttribute("class","fondo6");
+        h5.appendChild(texto3);
+        const cancelar = document.createElement("button");
+        const texto2 = document.createTextNode("X");
+        cancelar.appendChild(texto2);
+        div.setAttribute("class","cambiarfondo ");
+        cancelar.setAttribute("class","cancelfondo btn-delete")
+        div.appendChild(cancelar);
+        div.appendChild(h5);
+        div.appendChild(img1);
+        div.appendChild(img2);
+        div.appendChild(img3);
+        div.appendChild(img4);
+        div.appendChild(img5);
+        div.appendChild(img6);
+        divfondo.setAttribute("class","fondooscuro");
+        divfondo.appendChild(div);
+        body2[0].appendChild(divfondo);
+        cancelar.addEventListener("click",(e)=>{
+            location.reload();
+        }); 
+        
+        img1.addEventListener("click",(e)=>{
+            body[0].style.backgroundImage = "url('fondo.jpg')";
+            localStorage.setItem("fondo","url('fondo.jpg')");
+        });  
+        img2.addEventListener("click",(e)=>{
+            body[0].style.backgroundImage = "url('fondo2.jpg')";
+            localStorage.setItem("fondo","url('fondo2.jpg')");
+        });  
+        img3.addEventListener("click",(e)=>{
+            body[0].style.backgroundImage = "url('fondo3.jpg')";
+            localStorage.setItem("fondo","url('fondo3.jpg')");
+        });  
+        img4.addEventListener("click",(e)=>{
+            body[0].style.backgroundImage = "url('fondo4.jpg')";
+            localStorage.setItem("fondo","url('fondo4.jpg')");
+        });  
+        img5.addEventListener("click",(e)=>{
+            body[0].style.backgroundImage = "url('fondo5.jpg')";
+            localStorage.setItem("fondo","url('fondo5.jpg')");
+        });  
+        img6.addEventListener("click",(e)=>{
+            body[0].style.backgroundImage = "url('fondo6.jpg')";
+            localStorage.setItem("fondo","url('fondo6.jpg')");
+        });  
+}
 // function borrarlista1(){
 //     var li = document.getElementsByTagName("li")
 //     var ul = document.getElementById("lista1");

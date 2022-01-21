@@ -3,8 +3,9 @@ if(localStorage.getItem("usuarioactual") == localStorage.getItem("usuario")&&loc
 
 
 const addboton = document.querySelector("#añadirbtn0");
-const btnañadirzona = document.querySelector("#añadirzona")
-const titulo = document.querySelector("#tituloimp0")
+const btnañadirzona = document.querySelector("#añadirzona");
+const btnfondo = document.querySelector("#fondo");
+const titulo = document.querySelector("#tituloimp0");
 var imput = document.querySelector("#añadirimp0");
 
 var ul = document.querySelector("#lista0");
@@ -21,6 +22,10 @@ var array8 = localStorage.getItem("textos8");
 var array9 = localStorage.getItem("textos9");
 var array10 = localStorage.getItem("textos10");
 var zonas = localStorage.getItem("zonas");
+const body2 = document.getElementsByTagName("body");
+body2[0].style.backgroundImage = localStorage.getItem("fondo");
+
+
 //1
 if(array != null){
     array = array.split(",");
@@ -125,6 +130,11 @@ cargarlista(array,ul,0,"textos");
 
 console.log(array);
 console.log(zonas);
+
+btnfondo.addEventListener("click",(e) =>{
+    console.log("asd");
+    cambiarfondo(e);
+})
 addboton.addEventListener("click",(e) =>{
     añadirtarea(ul,imput,"textos",array);
 })

@@ -1,4 +1,4 @@
-    var cerrarsesion = document.getElementById("cerrar");
+    var cerrarsesion = document.getElementById("cerrar2");
     var userdiv = document.getElementById("userc");
     var passdiv = document.getElementById("passc");
     var inicdiv = document.getElementById("inicc");
