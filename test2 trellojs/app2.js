@@ -1,15 +1,12 @@
-//import * as funciones from 'funciones.mjs';
-if(localStorage.getItem("usuarioactual") == localStorage.getItem("usuario")&&localStorage.getItem("passactual") == localStorage.getItem("pass")){
 
+if(localStorage.getItem("usuarioactual") == localStorage.getItem("usuario")&&localStorage.getItem("passactual") == localStorage.getItem("pass")){
 
 const addboton = document.querySelector("#añadirbtn0");
 const btnañadirzona = document.querySelector("#añadirzona");
 const btnfondo = document.querySelector("#fondo");
 const titulo = document.querySelector("#tituloimp0");
 var imput = document.querySelector("#añadirimp0");
-
 var ul = document.querySelector("#lista0");
-
 const boton = document.querySelector("#añadirbtn0");
 var array = localStorage.getItem("textos");
 var array2 = localStorage.getItem("textos2");
@@ -36,222 +33,102 @@ var zonas = localStorage.getItem("zonas");
 const body2 = document.getElementsByTagName("body");
 body2[0].style.backgroundImage = localStorage.getItem("fondo");
 
-
+/**
+ * Iniciadores de arrays con los datos de todas las tarjetas
+ */
 //1
-if(array != null){
-    array = array.split(",");
-    
-    if(array[0]==""){
-        array = [];
-       
-    }
-}else{
-    array = [];  
-}
-if(arraytime != null){
-    console.log(arraytime)  
-    arraytime = arraytime.split(",");
-    if(arraytime[0]==""){
-        arraytime=[];
-    }
-}else{
-    arraytime = [];  
-    console.log(arraytime)
-}
+if(array != null){array = array.split(",");
+    if(array[0]==""){array = [];}
+}else{array = [];}
+
+if(arraytime != null){arraytime = arraytime.split(",");
+    if(arraytime[0]==""){arraytime=[];}
+}else{arraytime = [];}
 //2
-if(array2 != null){
-    array2 = array2.split(",");
-    if(array2[0]==""){
-        array2 = [];
-    }
-}else{
-    array2 = [];  
-}
-if(array2time != null){
-    array2time = array2time.split(",");
-    if(array2time[0]==""){
-        array2time = [];
-    }
-}else{
-    array2time = [];  
-}
+if(array2 != null){array2 = array2.split(",");
+    if(array2[0]==""){array2 = [];}
+}else{array2 = [];}
+if(array2time != null){array2time = array2time.split(",");
+    if(array2time[0]==""){array2time = [];}
+}else{array2time = [];}
 
 //3
-if(array3 != null){
-    array3 = array3.split(",");
-    if(array3[0]==""){
-        array3 = [];
-    }
-}else{
-    array3 = [];  
-}
-if(array3time != null){
-    array3time = array3time.split(",");
-    if(array3time[0]==""){
-        array3time = [];
-    }
-}else{
-    array3time = [];  
-}
+if(array3 != null){array3 = array3.split(",");
+    if(array3[0]==""){array3 = [];}
+}else{array3 = [];}
+
+if(array3time != null){array3time = array3time.split(",");
+    if(array3time[0]==""){array3time = [];}
+}else{array3time = [];}
 //4
-if(array4 != null){
-    array4 = array4.split(",");
-    if(array4[0]==""){
-        array4 = [];
-    }
-}else{
-    array4 = [];  
-}
-if(array4time != null){
-    array4time = array4time.split(",");
-    if(array4time[0]==""){
-        array4time = [];
-    }
-}else{
-    array4time = [];  
-}
+if(array4 != null){array4 = array4.split(",");
+    if(array4[0]==""){array4 = [];}
+}else{array4 = [];}
+if(array4time != null){array4time = array4time.split(",");
+    if(array4time[0]==""){array4time = [];}
+}else{array4time = [];}
 //5
-if(array5 != null){
-    array5 = array5.split(",");
-    if(array5[0]==""){
-        array5 = [];
-    }
-}else{
-    array5 = [];  
-}
-if(array5time != null){
-    array5time = array5time.split(",");
-    if(array5time[0]==""){
-        array5time = [];
-    }
-}else{
-    array5time = [];  
-}
+if(array5 != null){array5 = array5.split(",");
+    if(array5[0]==""){array5 = [];}
+}else{array5 = [];}
+if(array5time != null){array5time = array5time.split(",");
+    if(array5time[0]==""){array5time = [];}
+}else{array5time = [];}
 //6
-if(array6 != null){
-    array6 = array6.split(",");
-    if(array6[0]==""){
-        array6 = [];
-    }
-}else{
-    array6 = [];  
-}
-if(array6time != null){
-    array6time = array6time.split(",");
-    if(array6time[0]==""){
-        array6time = [];
-    }
-}else{
-    array6time = [];  
-}
+if(array6 != null){array6 = array6.split(",");
+    if(array6[0]==""){array6 = [];}
+}else{array6 = [];}
+if(array6time != null){array6time = array6time.split(",");
+    if(array6time[0]==""){array6time = [];}
+}else{array6time = [];}
 //7
-if(array7 != null){
-    array7 = array7.split(",");
-    if(array7[0]==""){
-        array7 = [];
-    }
-}else{
-    array7 = [];  
-}
-if(array7time != null){
-    array7time = array7time.split(",");
-    if(array7time[0]==""){
-        array7time = [];
-    }
-}else{
-    array7time = [];  
-}
+if(array7 != null){array7 = array7.split(",");
+    if(array7[0]==""){array7 = [];}
+}else{array7 = [];}
+if(array7time != null){array7time = array7time.split(",");
+    if(array7time[0]==""){array7time = [];}
+}else{array7time = [];}
 //8
-if(array8 != null){
-    array8 = array8.split(",");
-    if(array8[0]==""){
-        array8 = [];
-    }
-}else{
-    array8 = [];  
-}
-if(array8time != null){
-    array8time = array8time.split(",");
-    if(array8time[0]==""){
-        array8time = [];
-    }
-}else{
-    array8time = [];  
-}
+if(array8 != null){array8 = array8.split(",");
+    if(array8[0]==""){array8 = [];}
+}else{array8 = [];}
+if(array8time != null){array8time = array8time.split(",");
+    if(array8time[0]==""){array8time = [];}
+}else{array8time = [];}
 //9
-if(array9 != null){
-    array9 = array9.split(",");
-    if(array9[0]==""){
-        array9 = [];
-    }
-}else{
-    array9 = [];  
-}
-if(array9time != null){
-    array9time = array9time.split(",");
-    if(array9time[0]==""){
-        array9time = [];
-    }
-}else{
-    array9time = [];  
-}
+if(array9 != null){array9 = array9.split(",");
+    if(array9[0]==""){array9 = [];}
+}else{array9 = [];}
+if(array9time != null){array9time = array9time.split(",");
+    if(array9time[0]==""){array9time = [];}
+}else{array9time = [];}
 //10
-if(array10 != null){
-    array10 = array10.split(",");
-    if(array10[0]==""){
-        array10 = [];
-    }
-}else{
-    array10 = [];  
-}
-if(array10time != null){
-    array10time = array10time.split(",");
-    if(array10time[0]==""){
-        array10time = [];
-    }
-}else{
-    array10time = [];  
-}
-//----------
+if(array10 != null){array10 = array10.split(",");
+    if(array10[0]==""){array10 = [];}
+}else{array10 = [];}
+if(array10time != null){array10time = array10time.split(",");
+    if(array10time[0]==""){array10time = [];}
+}else{array10time = [];}
+//zonas
 if(zonas != null){
-    if(zonas[0]==""){
-        zonas = 1;
-    }
-}else{
-    console.log(2)
-    zonas = 1;  
-}
+    if(zonas[0]==""){zonas = 1;}
+}else{zonas = 1;}
+//cargar la primera zona
 cargarlista(array,ul,0,"textos","textostime",arraytime);
 
-
-console.log(array);
-console.log(arraytime);
-
-btnfondo.addEventListener("click",(e) =>{
-    console.log("asd");
-    cambiarfondo(e);
-})
-addboton.addEventListener("click",(e) =>{
-    añadirtarea(ul,imput,"textos",array,"textostime",arraytime);
-})
-titulo.addEventListener("focusout",(e) =>{
-    titulo.style.borderColor = "rgb(60, 255, 0)";
-    localStorage.setItem("titulo",titulo.value);
-})
-titulo.addEventListener("focusin",function (e) {
-    titulo.style.borderColor = "red";
-})
+btnfondo.addEventListener("click",(e) =>{cambiarfondo(e);})
+addboton.addEventListener("click",(e) =>{añadirtarea(ul,imput,"textos",array,"textostime",arraytime);})
+titulo.addEventListener("focusout",(e) =>{localStorage.setItem("titulo",titulo.value);})
+btnañadirzona.addEventListener("click",(e) =>{añadirzona(zonas);})
+//titulo.addEventListener("focusin",function (e) {titulo.style.borderColor = "red";})
 titulo.value = localStorage.getItem("titulo")
-btnañadirzona.addEventListener("click",(e) =>{
-    añadirzona(zonas);
-})
-for (let x = 1; x < zonas; x++) {
-    cargarzonas(x);
-}
-if(zonas>9){
-var bota= document.getElementById("añadirzona").setAttribute("disabled","");
-}
 
+for (let x = 1; x < zonas; x++) {cargarzonas(x);}
+if(zonas>9){var bota= document.getElementById("añadirzona").setAttribute("disabled","");}
+
+/**
+ * Guardar la posicion del scroll horizontal al refrescar la pagina
+ */
 window.onload=function(){
     var pos=window.name || 0;
     window.scrollTo(pos,0);
@@ -261,8 +138,11 @@ window.onload=function(){
     }
 
 }
-const scrollContainer = document.querySelector("html");
 
+/**
+ * Hacer el scroll en horizontal solo cuando este fuera de un div
+ */
+const scrollContainer = document.querySelector("html");
 var scrolly= "true";
 var divs = document.getElementsByClassName("lista1");
 for (let p = 0; p < divs.length; p++) {

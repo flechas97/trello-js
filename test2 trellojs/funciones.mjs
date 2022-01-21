@@ -1,4 +1,7 @@
-
+/*
+Funcion para cargar los contenedores de tarjetas al cargar la pagina
+recibe como parametro las diferentes ids de las zonas 
+*/
 function cargarzonas(id){
     var crearzona = document.createElement("div");
     crearzona.setAttribute("class","zona"+id);
@@ -30,6 +33,7 @@ function cargarzonas(id){
     flex.appendChild(crearzona)
     var ul2 = document.querySelector("#lista1");
     var imput2 = document.querySelector("#añadirimp1");
+    //segun la id se cargan las diferentes
     if(id==1){
         cargarlista(array2,ul2,1,"textos2","textos2time",array2time);
         titulo.value = localStorage.getItem("titulo"+id);
@@ -225,8 +229,6 @@ function añadirtarea(ul,imput,local,array,localtime,arraytimevar){
         horas = tiempito.getHours(),
         minutos = tiempito.getMinutes();
     var dia = day+"/"+month+"/"+year+"-"+horas+":"+minutos;
-    console.log(dia);
-    // var objetos = localStorage.getItem("objetos")
     const text = imput.value;
     const li = document.createElement("li");
     const p = document.createElement("p");
@@ -236,8 +238,6 @@ function añadirtarea(ul,imput,local,array,localtime,arraytimevar){
     li.setAttribute("id","li"+array.length)
     ul.appendChild(li);
     imput.value = "";
-    // objetos++;
-    // localStorage.setItem("objetos",objetos);
     array.push(text);
     arraytimevar.push(dia);
     localStorage.setItem(local,array);
@@ -354,13 +354,6 @@ function addeditbtn(ul,local,array) {
                 localStorage.setItem(local,array);
                 location.reload();
             });
-
-
-        //array[elemento];
-        //localStorage.setItem(local,array);
-        
-        //ul.removeChild(item);
-        //location.reload();
     })
     return deletebtn;
 }
@@ -431,16 +424,6 @@ function cambiarfondo() {
             localStorage.setItem("fondo","url('fondo6.jpg')");
         });  
 }
-// function borrarlista1(){
-//     var li = document.getElementsByTagName("li")
-//     var ul = document.getElementById("lista1");
-//     console.log(li)
-//     for (let i = 0; i < array.length; i++) {
-//         ul.removeChild(li[i]);
-//     }
-    
-// }
-// borrarlista1();
 
 
 // const time = document.getElementById("time");

@@ -96,17 +96,55 @@
   }
 
 
-  @media (max-width: 1000px) {
+  @media (max-width: 700px) {
     #header{
         width: 100%;
         height: 50px;
         background-color: rgb(226, 226, 226);
         position: fixed;
+        
         box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.678);
     }
     .nav{
         display: flex;
-        justify-content: space-around;
-        width: 500px;
+        /* justify-content: space-around; */
+        width: auto;
+    }
+    .logo{
+        width: 120px;
+        height: 50px;
+        background: rgb(102,51,153);
+        background: linear-gradient(90deg, rgba(102,51,153,1) 0%, rgba(102,51,153,1) 87%, rgba(226,226,226,1) 100%);
+        margin-right: 0%;
+    }
+    .logo img{
+        margin-left: 4%;
+        margin-top: 10px;
+        width: 100px;
+        transition: 1s ease all;
+    }
+    #cerrar2{
+        width: 50px; 
+        height: 30px;
+        font-size: 10px;
+       }
+       #fondo, #letra{
+           width: 50px; 
+           height: 30px;
+           font-size: 10px;
+       }
+       .menuul{
+        background-color: rgba(238, 238, 238, 0);
+        display: flex;
+        float: left;
+    }
+    .menuli{
+        background-color: rgba(238, 238, 238, 0);
+        box-shadow: 0px 0px 0px black;
+        width: auto;
+        padding: 10px 0px 12px 0px;
+        border-radius: 0px;
+        text-align: center;
+        margin: 0px 3px 0px 3px
     }
   }
