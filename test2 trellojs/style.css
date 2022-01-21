@@ -13,7 +13,7 @@ body{
 p{
     display: inline-block;
     padding: 5px;
-    width: 62%;
+    width: 80%;
     word-wrap: break-word;
    
 }
@@ -42,7 +42,7 @@ ul{
     padding-inline-start: 0px;
 }
 li{
-    
+    cursor: pointer;
     list-style: none;
     margin: 5px;
     border-radius: 5px;
@@ -68,6 +68,7 @@ li{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     max-height: 800px;
     overflow-y: scroll;
+    
 }
 /* width */
 ::-webkit-scrollbar {
@@ -116,16 +117,16 @@ button{
 .btn-delete{
     position:relative;
     margin-top: 0px;
-    margin-right: 10px;
+    margin-right: 0px;
     box-shadow: rgba(40, 46, 42, 0.349) 1px 1px 2px 0px;
     float: right;
-    height: 23px;
-    width: 23px;
+    height: 15px;
+    width: 15px;
     background-color: rgba(250, 120, 120, 0.705);
     border-radius: 5px;
     font-weight: bold;
     color: white;
-    font-size: 12px;
+    font-size: 8px;
 }
 .btn-edit{
     position:relative;
@@ -135,13 +136,13 @@ button{
     margin-right: 3px;
     box-shadow: rgba(40, 46, 42, 0.349) 1px 1px 2px 0px;
     float: right;
-    height: 23px;
-    width: 23px;
+    height: 15px;
+    width: 15px;
     background-color: rgba(255, 190, 68, 0.705);
     border-radius: 5px;
     font-weight: bold;
     color: white;
-    font-size: 12px;
+    font-size: 8px;
 }
 .btn-edit:hover{
     background-color: rgb(255, 166, 0);
@@ -174,9 +175,56 @@ input:focus{
     outline:none;
     color: rgb(59, 59, 59);
 }
+.editar{
+    position:relative;
+    width: 200px;
+    top:20%;
+}
+.editarbtn{
+    font-size: 14px;
+    position:relative;
+    top:20%;
+    right: 30px;
+    width: 65px;
+    height: 24px;
 
+}
+.cancel{
+    position: relative;
+    top:-21px;
+    left: 65px;
+    width: 17px;
+    height: 17px;
 
-
+}
+.fondooscuro{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.616);
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    width: 150%;
+    height: 100%;
+    
+}
+.fondoedit{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.397);
+    border: 1px solid rgba(255, 255, 255, 0.315);
+    width: 310px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.349) 1px 1px 15px 3px;
+}
+h5{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.315);
+    background-color: rgb(61, 61, 61);
+    border-radius: 10px 10px 0px 0px;
+}
 @media (min-width: 1500px) {
     .zonast{
         margin: 15px;

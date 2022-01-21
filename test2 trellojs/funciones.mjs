@@ -243,8 +243,47 @@ function cargarlista(array,ul,id,local) {
         p.textContent = text;
         li.appendChild(p);
         li.appendChild(adddeletebtn(ul,local,array));
-        li.appendChild(addeditbtn(ul,local,array));
-        ul.appendChild(li);  
+        //li.appendChild(addeditbtn(ul,local,array));
+        ul.appendChild(li);
+        li.addEventListener("dblclick",(e)=>{
+            const divfondo = document.createElement("div");
+            const div = document.createElement("div");
+            const cancelar = document.createElement("button");
+            const editimput = document.createElement("input");
+            const confirmar = document.createElement("button");
+            const h5 =document.createElement("h5");
+            const texto = document.createTextNode("Confirmar");
+            const texto2 = document.createTextNode("X");
+            const texto3 = document.createTextNode("Editar tarjeta");
+            const body2 = document.getElementsByClassName("container");
+            const item = e.target.parentElement;
+            cancelar.setAttribute("class","btn-delete cancel");
+            cancelar.appendChild(texto2);
+            elemento = item.getAttribute("id");
+            elemento = elemento.substr(3);
+            console.log("editar= "+elemento);
+            editimput.setAttribute("class","editar");
+            editimput.setAttribute("placeholder","Nuevo texto")
+            confirmar.setAttribute("class","editarbtn");
+            div.setAttribute("class","fondoedit");
+            h5.appendChild(texto3)
+            confirmar.appendChild(texto);
+            divfondo.setAttribute("class","fondooscuro");
+            div.appendChild(h5);
+            div.appendChild(editimput);
+            div.appendChild(confirmar);
+            div.appendChild(cancelar);
+            divfondo.appendChild(div);
+            body2[0].appendChild(divfondo);
+                confirmar.addEventListener("click",(e)=>{
+                    array[elemento] = editimput.value;
+                    localStorage.setItem(local,array);
+                    location.reload();
+                });  
+                cancelar.addEventListener("click",(e)=>{
+                    location.reload();
+                });  
+        });
     }
 }
 
@@ -274,17 +313,31 @@ function addeditbtn(ul,local,array) {
     deletebtn.className = "btn-edit";
 
     deletebtn.addEventListener("click", (e) =>{
-        // array = localStorage.getItem("textos");
-        // array = array.split(",");
-        console.log(array);
+        const editimput = document.createElement("input");
+        const confirmar = document.createElement("button");
+        const texto = document.createTextNode("Confirmar");
+        const body2 = document.getElementsByClassName("container");
         const item = e.target.parentElement;
         elemento = item.getAttribute("id");
         elemento = elemento.substr(3);
-        array.splice(elemento,1);
-        localStorage.setItem(local,array);
-        console.log(array);
-        ul.removeChild(item);
-        location.reload();
+        console.log("editar= "+elemento);
+        editimput.setAttribute("class","editar");
+        confirmar.setAttribute("class","editarbtn");
+        confirmar.appendChild(texto);
+        body2[0].appendChild(editimput);
+        body2[0].appendChild(confirmar);
+            confirmar.addEventListener("click",(e)=>{
+                array[elemento] = editimput.value;
+                localStorage.setItem(local,array);
+                location.reload();
+            });
+
+
+        //array[elemento];
+        //localStorage.setItem(local,array);
+        
+        //ul.removeChild(item);
+        //location.reload();
     })
     return deletebtn;
 }
