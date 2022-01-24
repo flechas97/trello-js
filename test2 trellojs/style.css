@@ -96,7 +96,7 @@ li{
 input{
     margin-left: 5px;
     height: 21px;
-    width: 75%;
+    width: 94%;
     background-color: rgba(255, 255, 255, 0.418);
     border: 1px solid rgba(128, 128, 128, 0.411);
     word-wrap: break-word;
@@ -303,6 +303,7 @@ h5{
     font-size: 13px;
 }
 span{
+    font-size: 15px;
     margin-left: 41%;
     color: rgba(0, 0, 0, 0.623);
 }

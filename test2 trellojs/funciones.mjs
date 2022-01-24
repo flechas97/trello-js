@@ -21,10 +21,10 @@ function cargarzonas(id){
     titulo.setAttribute("placeholder","Nuevo titulo");
     titulo.value = "Titulo";
     cajon.appendChild(titulo);
-    boton.appendChild(texto);
+    //boton.appendChild(texto);
     crearzona.appendChild(cajon);
     cajon.appendChild(imput);
-    cajon.appendChild(boton);
+    //cajon.appendChild(boton);
     var ul = document.createElement("ul");
     ul.setAttribute("id","lista"+id);
     ul.setAttribute("class","lista");
@@ -37,8 +37,11 @@ function cargarzonas(id){
     if(id==1){
         cargarlista(array2,ul2,1,"textos2","textos2time",array2time);
         titulo.value = localStorage.getItem("titulo"+id);
-        boton.addEventListener("click",function (e) {
-            añadirtarea(ul2,imput2,"textos2",array2,"textos2time",array2time); 
+        imput.addEventListener("keypress",function (e) {
+            if(e.keyCode == "13"){
+                añadirtarea(ul2,imput2,"textos2",array2,"textos2time",array2time); 
+            }
+            
         })
         titulo.addEventListener("focusout",function (e) {
             titulo.style.borderColor = "rgb(60, 255, 0)";
@@ -53,8 +56,10 @@ function cargarzonas(id){
         var imput3 = document.querySelector("#añadirimp2");
         cargarlista(array3,ul3,2,"textos3","textos3time",array3time);
         titulo.value = localStorage.getItem("titulo"+id);
-        boton.addEventListener("click",function (e) {
-            añadirtarea(ul3,imput3,"textos3",array3,"textos3time",array3time); 
+        imput3.addEventListener("keypress",function (e) {
+            if(e.keyCode == "13"){
+                añadirtarea(ul3,imput3,"textos3",array3,"textos3time",array3time); 
+            }
         })
                 titulo.addEventListener("focusout",function (e) {
                     titulo.style.borderColor = "rgb(60, 255, 0)";
@@ -69,8 +74,10 @@ function cargarzonas(id){
         var imput4 = document.querySelector("#añadirimp3");
         cargarlista(array4,ul4,3,"textos4","textos4time",array4time);
         titulo.value = localStorage.getItem("titulo"+id);
-        boton.addEventListener("click",function (e) {
-            añadirtarea(ul4,imput4,"textos4",array4,"textos4time",array4time); 
+        imput4.addEventListener("keypress",function (e) {
+            if(e.keyCode == "13"){
+                añadirtarea(ul4,imput4,"textos4",array4,"textos4time",array4time); 
+            }
         })
                 titulo.addEventListener("focusout",function (e) {
                     titulo.style.borderColor = "rgb(60, 255, 0)";
@@ -85,8 +92,10 @@ function cargarzonas(id){
         var imput5 = document.querySelector("#añadirimp4");
         cargarlista(array5,ul5,4,"textos5","textos5time",array5time);
         titulo.value = localStorage.getItem("titulo"+id);
-        boton.addEventListener("click",function (e) {
-            añadirtarea(ul5,imput5,"textos5",array5,"textos5time",array5time); 
+        imput5.addEventListener("keypress",function (e) {
+            if(e.keyCode == "13"){
+                añadirtarea(ul5,imput5,"textos5",array5,"textos5time",array5time); 
+            }
         })
                 titulo.addEventListener("focusout",function (e) {
                     titulo.style.borderColor = "rgb(60, 255, 0)";
@@ -101,8 +110,10 @@ function cargarzonas(id){
         var imput6 = document.querySelector("#añadirimp5");
         cargarlista(array6,ul6,5,"textos6","textos6time",array6time);
         titulo.value = localStorage.getItem("titulo"+id);
-        boton.addEventListener("click",function (e) {
-            añadirtarea(ul6,imput6,"textos6",array6,"textos6time",array6time); 
+        imput6.addEventListener("keypress",function (e) {
+            if(e.keyCode == "13"){
+                añadirtarea(ul6,imput6,"textos6",array6,"textos6time",array6time); 
+            }
         })
                 titulo.addEventListener("focusout",function (e) {
                     titulo.style.borderColor = "rgb(60, 255, 0)";
@@ -117,8 +128,10 @@ function cargarzonas(id){
         var imput7 = document.querySelector("#añadirimp6");
         cargarlista(array7,ul7,6,"textos7","textos7time",array7time);
         titulo.value = localStorage.getItem("titulo"+id);
-        boton.addEventListener("click",function (e) {
-            añadirtarea(ul7,imput7,"textos7",array7,"textos7time",array7time); 
+        imput7.addEventListener("keypress",function (e) {
+            if(e.keyCode == "13"){
+                añadirtarea(ul7,imput7,"textos7",array7,"textos7time",array7time); 
+            }
         })
                 titulo.addEventListener("focusout",function (e) {
                     titulo.style.borderColor = "rgb(60, 255, 0)";
@@ -134,8 +147,11 @@ function cargarzonas(id){
         var imput8 = document.querySelector("#añadirimp7");
         cargarlista(array8,ul8,7,"textos8","textos8time",array8time);
         titulo.value = localStorage.getItem("titulo"+id);
-        boton.addEventListener("click",function (e) {
-            añadirtarea(ul8,imput8,"textos8",array8,"textos8time",array8time); 
+        imput8.addEventListener("keypress",function (e) {
+            if(e.keyCode == "13"){
+                añadirtarea(ul8,imput8,"textos8",array8,"textos8time",array8time); 
+            }
+            
         })
                 titulo.addEventListener("focusout",function (e) {
                     titulo.style.borderColor = "rgb(60, 255, 0)";
@@ -151,8 +167,10 @@ function cargarzonas(id){
         var imput9 = document.querySelector("#añadirimp8");
         cargarlista(array9,ul9,8,"textos9","textos9time",array9time);
         titulo.value = localStorage.getItem("titulo"+id);
-        boton.addEventListener("click",function (e) {
-            añadirtarea(ul9,imput9,"textos9",array9,"textos9time",array9time); 
+        imput9.addEventListener("keypress",function (e) {
+            if(e.keyCode == "13"){
+                añadirtarea(ul9,imput9,"textos9",array9,"textos9time",array9time); 
+            }
         })
                 titulo.addEventListener("focusout",function (e) {
                     titulo.style.borderColor = "rgb(60, 255, 0)";
@@ -168,8 +186,10 @@ function cargarzonas(id){
         var imput10 = document.querySelector("#añadirimp9");
         cargarlista(array10,ul10,9,"textos10","textos10time",array10time);
         titulo.value = localStorage.getItem("titulo"+id);
-        boton.addEventListener("click",function (e) {
-            añadirtarea(ul10,imput10,"textos10",array10,"textos10time",array10time); 
+        imput10.addEventListener("keypress",function (e) {
+            if(e.keyCode == "13"){
+                añadirtarea(ul10,imput10,"textos10",array10,"textos10time",array10time); 
+            }
         })
                 titulo.addEventListener("focusout",function (e) {
                     titulo.style.borderColor = "rgb(60, 255, 0)";
@@ -208,7 +228,6 @@ function añadirzona(id){
     if(id==1){
     cargarlista(array2,ul2,1,"textos2");
     boton.addEventListener("click",function (e) {
-        console.log("asd")
         añadirtarea(ul2,imput2,"textos2",array2); 
     })
 }

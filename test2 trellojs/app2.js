@@ -5,7 +5,7 @@ const addboton = document.querySelector("#añadirbtn0");
 const btnañadirzona = document.querySelector("#añadirzona");
 const btnfondo = document.querySelector("#fondo");
 const titulo = document.querySelector("#tituloimp0");
-var imput = document.querySelector("#añadirimp0");
+var imput = document.getElementById("añadirimp0");
 var ul = document.querySelector("#lista0");
 const boton = document.querySelector("#añadirbtn0");
 var array = localStorage.getItem("textos");
@@ -117,7 +117,7 @@ if(zonas != null){
 cargarlista(array,ul,0,"textos","textostime",arraytime);
 
 btnfondo.addEventListener("click",(e) =>{cambiarfondo(e);})
-addboton.addEventListener("click",(e) =>{añadirtarea(ul,imput,"textos",array,"textostime",arraytime);})
+imput.addEventListener("keypress",function (e) {if(e.keyCode == "13"){añadirtarea(ul,imput,"textos",array,"textostime",arraytime);}})
 titulo.addEventListener("focusout",(e) =>{localStorage.setItem("titulo",titulo.value);})
 btnañadirzona.addEventListener("click",(e) =>{añadirzona(zonas);})
 //titulo.addEventListener("focusin",function (e) {titulo.style.borderColor = "red";})
