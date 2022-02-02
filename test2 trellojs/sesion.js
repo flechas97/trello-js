@@ -4,15 +4,17 @@
     var inicdiv = document.getElementById("inicc");
     var regidiv = document.getElementById("regic");
     cerrarsesion.style.display = "none";
-    // localStorage.setItem("usuario","1234");
-    // localStorage.setItem("pass","1234");
-    
+  
+    //Eventos para iniciar y cerrar
     cerrarsesion.addEventListener("click", (e) =>{
         cerrarsesionbtn();
     })
     inicdiv.addEventListener("click",(e)=>{
         iniciarsesion();
     })
+    /**
+     * Control para hacer aparecer el login si no existe una sesion activa
+     */
     if(localStorage.getItem("usuarioactual") == localStorage.getItem("usuario")&&localStorage.getItem("passactual") == localStorage.getItem("pass")){
         cerrarsesion.style.display = "block";
         userdiv.style.display = "none";

@@ -1,10 +1,15 @@
+/**
+ * Comprovar si ha entrado alguna vez a la pagina para iniciar las variables del localstorage
+ */
 if(!localStorage.getItem("usuarioactual")){
     localStorage.setItem("usuarioactual","-");
     localStorage.setItem("passactual","-");
     location.reload();
 }
 if(localStorage.getItem("usuarioactual") == localStorage.getItem("usuario")&&localStorage.getItem("passactual") == localStorage.getItem("pass")){
-
+/**
+ * Variables con toda la informacion
+ */
 const addboton = document.querySelector("#añadirbtn0");
 const btnañadirzona = document.querySelector("#añadirzona");
 const btnfondo = document.querySelector("#fondo");
@@ -119,14 +124,19 @@ if(zonas != null){
 }else{zonas = 1;}
 //cargar la primera zona
 cargarlista(array,ul,0,"textos","textostime",arraytime);
-
+//Boton para cambiar fondo
 btnfondo.addEventListener("click",(e) =>{cambiarfondo(e);})
+//evento para añadir tareas al pulsar intro
 imput.addEventListener("keypress",function (e) {if(e.keyCode == "13"){añadirtarea(ul,imput,"textos",array,"textostime",arraytime);}})
+//Evento para guardar el texto escrito al perder el foco
 titulo.addEventListener("focusout",(e) =>{localStorage.setItem("titulo",titulo.value);})
+//Evento para añadir zonas al hacer click
 btnañadirzona.addEventListener("click",(e) =>{añadirzona(zonas);})
-//titulo.addEventListener("focusin",function (e) {titulo.style.borderColor = "red";})
+//dibujar el titulo de la 1º tarjeta
 titulo.value = localStorage.getItem("titulo")
-
+/**
+ * Si las zonas superan a 9 el boton de añadir zonas se deshabilita
+ */
 for (let x = 1; x < zonas; x++) {cargarzonas(x);}
 if(zonas>9){var bota= document.getElementById("añadirzona").setAttribute("disabled","");}
 

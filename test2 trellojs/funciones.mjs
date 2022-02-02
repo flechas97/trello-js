@@ -202,6 +202,10 @@ function cargarzonas(id){
         
     }
 }
+
+/**
+ * Funcion para añadir zonas recibe la id de la zona
+ */
 function añadirzona(id){
     var crearzona = document.createElement("div");
     crearzona.setAttribute("class","zona"+id);
@@ -239,7 +243,10 @@ function añadirzona(id){
 
 
 
-
+/**
+ * Funcion para añadir tareas recibe como parametros la lista el input concreto el local la array que contiene el local
+ * la variable del local que contiene las fechas y la array que contiene las fechas (sobran parametros probrablemente)
+ */
 function añadirtarea(ul,imput,local,array,localtime,arraytimevar){
     const tiempito = new Date();
     var day = tiempito.getDate(),
@@ -263,6 +270,9 @@ function añadirtarea(ul,imput,local,array,localtime,arraytimevar){
     localStorage.setItem(localtime,arraytimevar);
     location.reload();
 }
+/**
+ * cargar las listas al cargar la pagina
+ */
 function cargarlista(array,ul,id,local,localtime,arraytimevar) {
     const time = new Date();
     let day = time.getDate(),
@@ -326,7 +336,9 @@ function cargarlista(array,ul,id,local,localtime,arraytimevar) {
         });
     }
 }
-
+/**
+ * añade el boton de borrar las tareas
+ */
 function adddeletebtn(ul,local,array,localtime,arraytimevar) {
     const deletebtn = document.createElement("button");
     deletebtn.textContent = "X";
@@ -349,6 +361,9 @@ function adddeletebtn(ul,local,array,localtime,arraytimevar) {
     })
     return deletebtn;
 }
+/**
+ * Funcion que al final no ha sido implementada ya que la he sustituido por doble click
+ */
 function addeditbtn(ul,local,array) {
     const deletebtn = document.createElement("button");
     deletebtn.textContent = "X";
@@ -377,7 +392,9 @@ function addeditbtn(ul,local,array) {
     return deletebtn;
 }
 
-
+/**
+ * Funcion para hacer aparecer la ventana de fondos al pulsar el boton de cambiar fondo
+ */
 function cambiarfondo() {
         const body2 = document.getElementsByClassName("container");
         const body = document.getElementsByTagName("body");
