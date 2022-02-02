@@ -9,3 +9,5 @@
 7. Scroll vertical al pasar el raton sobre una tarjeta.
 8. Añadir el titulo.
 9. Editar tarjetas al hacer doble click sobre ellas.
+
+#### ver tambien en bermejoweb.es/trello

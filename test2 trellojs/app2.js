@@ -1,4 +1,8 @@
-
+if(!localStorage.getItem("usuarioactual")){
+    localStorage.setItem("usuarioactual","-");
+    localStorage.setItem("passactual","-");
+    location.reload();
+}
 if(localStorage.getItem("usuarioactual") == localStorage.getItem("usuario")&&localStorage.getItem("passactual") == localStorage.getItem("pass")){
 
 const addboton = document.querySelector("#añadirbtn0");
