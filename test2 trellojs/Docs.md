@@ -10,4 +10,29 @@
 8. Añadir el titulo.
 9. Editar tarjetas al hacer doble click sobre ellas.
 
+## MANUAL DE USO
+
+1. hacer un registro en la pagina .
+
+2. hacer login con el usuario y contraseña del registro.
+
+3. ahora ya podras añadir zonas y añadir tareas.
+
+4. para añadir una tarea solo tienes que escribir el texto en el cuadro de "añadir tareas"
+    y pulsar intro para introducir la tarea.
+
+5. para añadir nuevas zonas solo tienes que pulsar el boton verde grande que aparece "añadir zona".
+
+6. para borrar una tarea solo tienes que pulsar la X en la tarea que quieras.
+
+7. para editar una tarea debes de hacer doble click sobre la tarea que desees editar.
+
+8. para cambiar el fondo el la barra de navegacion en el boton cambiar fondo, aparecera una ventana con 6 fondos
+    distintos a elegir. una vez seleccionado el que quieras cierra la ventana.
+
+9. para cambiar el titulo de las zonas solo tienes que escribir sobre "Nuevo titulo" y añadir el que quieras(se guarda automaticamente al quitar el foco del titulo).
+
+
 #### ver tambien en bermejoweb.es/trello
+
+
