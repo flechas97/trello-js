@@ -32,7 +32,17 @@
 
 9. para cambiar el titulo de las zonas solo tienes que escribir sobre "Nuevo titulo" y añadir el que quieras(se guarda automaticamente al quitar el foco del titulo).
 
+### Repositorio en https://github.com/flechas97/trello-js/tree/main/test2%20trellojs
+#### ver tambien en https://bermejoweb.es/trello/
 
-#### ver tambien en bermejoweb.es/trello
+#### Otros proyectos
 
+https://bermejoweb.es/sodoku/
 
+https://bermejoweb.es/calculadora/
+
+https://bermejoweb.es/tiendadiw/
+
+https://bermejoweb.es/preguntas/
+
+https://bermejoweb.es/fotitos/
